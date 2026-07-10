@@ -53,10 +53,9 @@ table.top tr.lost td.stat { color: #B23A48; font-weight: 700; }
 </style>
 
 <h1>At-Risk &amp; Recovery Panel</h1><div style="font-size:15px;color:#3F4B5C;margin-top:-4px;margin-bottom:6px">Breaks, Holds, and Scheduled vs Attended</div>
-<div class="meta">Source: XP scheduling occurrences + override cancellation reasons &middot; Rates: $99/class Accelerate (rank 8/10/14), $68/class 1:1 Private (rank 32) &middot; Refreshed Friday, July 10, 2026 3:07 PM ET</div>
+<div class="meta">Source: XP scheduling occurrences + override cancellation reasons &middot; Rates: $99/class Accelerate (rank 8/10/14), $68/class 1:1 Private (rank 32) &middot; Refreshed Friday, July 10, 2026 3:21 PM ET</div>
 
 <div class="tabs">
-<a class="tabs-drops-link" href="https://ejake28.github.io/drops-analysis/" target="_blank">Dropped Students Analysis &rarr;</a>
 <button class="tab-btn active" onclick="showTab(event, 'gap')">Attendance Gap</button>
 <button class="tab-btn" onclick="showTab(event, 'break')">Break Re-engagement</button>
 </div>
@@ -107,14 +106,7 @@ table.top tr.lost td.stat { color: #B23A48; font-weight: 700; }
 
 </tbody></table>
 
-<h2>Monthly leak trend (2026)</h2>
-<div class="mini">
-  <div class="row"><span class="k">2026-01</span><span class="v"><span class="dim">1,771 of 11,863 (15%)</span> <strong style="color:#B23A48">$173,810</strong></span></div><div class="row"><span class="k">2026-02</span><span class="v"><span class="dim">1,230 of 10,721 (11%)</span> <strong style="color:#B23A48">$120,468</strong></span></div><div class="row"><span class="k">2026-03</span><span class="v"><span class="dim">1,515 of 12,416 (12%)</span> <strong style="color:#B23A48">$148,962</strong></span></div><div class="row"><span class="k">2026-04</span><span class="v"><span class="dim">1,711 of 13,146 (13%)</span> <strong style="color:#B23A48">$168,335</strong></span></div><div class="row"><span class="k">2026-05</span><span class="v"><span class="dim">2,200 of 13,392 (16%)</span> <strong style="color:#B23A48">$216,498</strong></span></div><div class="row"><span class="k">2026-06</span><span class="v"><span class="dim">2,111 of 13,719 (15%)</span> <strong style="color:#B23A48">$207,656</strong></span></div><div class="row"><span class="k">2026-07</span><span class="v"><span class="dim">64 of 441 (15%)</span> <strong style="color:#B23A48">$6,305</strong></span></div>
-</div>
 
-<div class="foot">
-<strong>Methodology.</strong> Scheduled = XP class occurrences (rank 8/10/14/32) with a start date in 2026 YTD, recurring events expanded. Attended = occurrence with no cancellation override attached (plus every makeup-tagged occurrence counted as intended-attended). Cancellation reason categorized from the override text (family / instructor / Game-U / unclassified). <em>Corrected classifier (2026-07-01):</em> &ldquo;Planned Absence&rdquo; and &ldquo;Unplanned Absence&rdquo; strings are family-side signals in this dataset &mdash; prior version incorrectly bucketed them as instructor cancels. Recovery accounting uses 2219 YTD sub-covered + 2998 YTD makeups; &ldquo;net not-happened&rdquo; subtracts makeups from total cancels. Blended $99/68 per class.
-</div>
 
 
 <h2 style="margin-top:28px">Top 25 Heavy-Cancel Families &mdash; outreach queue</h2>
@@ -427,6 +419,14 @@ table.top tr.lost td.stat { color: #B23A48; font-weight: 700; }
 </td>
 </tr>
 </tbody></table></div>
+<h2>Monthly leak trend (2026)</h2>
+<div class="mini">
+  <div class="row"><span class="k">2026-01</span><span class="v"><span class="dim">1,771 of 11,863 (15%)</span> <strong style="color:#B23A48">$173,810</strong></span></div><div class="row"><span class="k">2026-02</span><span class="v"><span class="dim">1,230 of 10,721 (11%)</span> <strong style="color:#B23A48">$120,468</strong></span></div><div class="row"><span class="k">2026-03</span><span class="v"><span class="dim">1,515 of 12,416 (12%)</span> <strong style="color:#B23A48">$148,962</strong></span></div><div class="row"><span class="k">2026-04</span><span class="v"><span class="dim">1,711 of 13,146 (13%)</span> <strong style="color:#B23A48">$168,335</strong></span></div><div class="row"><span class="k">2026-05</span><span class="v"><span class="dim">2,200 of 13,392 (16%)</span> <strong style="color:#B23A48">$216,498</strong></span></div><div class="row"><span class="k">2026-06</span><span class="v"><span class="dim">2,111 of 13,719 (15%)</span> <strong style="color:#B23A48">$207,656</strong></span></div><div class="row"><span class="k">2026-07</span><span class="v"><span class="dim">64 of 441 (15%)</span> <strong style="color:#B23A48">$6,305</strong></span></div>
+</div>
+
+<div class="foot">
+<strong>Methodology.</strong> Scheduled = XP class occurrences (rank 8/10/14/32) with a start date in 2026 YTD, recurring events expanded. Attended = occurrence with no cancellation override attached (plus every makeup-tagged occurrence counted as intended-attended). Cancellation reason categorized from the override text (family / instructor / Game-U / unclassified). <em>Corrected classifier (2026-07-01):</em> &ldquo;Planned Absence&rdquo; and &ldquo;Unplanned Absence&rdquo; strings are family-side signals in this dataset &mdash; prior version incorrectly bucketed them as instructor cancels. Recovery accounting uses 2219 YTD sub-covered + 2998 YTD makeups; &ldquo;net not-happened&rdquo; subtracts makeups from total cancels. Blended $99/68 per class.
+</div>
 <h2>Recommendations</h2>
 <div style="background:#fff;border:1px solid #E4E9EF;border-radius:8px;padding:20px 24px;margin-bottom:12px;font-size:15px;line-height:1.55">
 <div style="color:#3F4B5C;margin-bottom:14px">Family cancels are the dominant leak (~$800,449, 60%+ of the total). Unlike instructor cancels, they can&rsquo;t be recovered through subs or makeups &mdash; only through <strong>retention outreach and behavior change</strong>. That&rsquo;s the biggest lever in the plan. Realistic 12-month recovery target: <strong>$200&ndash;$320K/yr</strong>.</div>
@@ -497,7 +497,7 @@ table.top tr.lost td.stat { color: #B23A48; font-weight: 700; }
 <div class="kpi" style="border-left:4px solid #7A8A9A"><div class="n">155</div><div class="l">Excluded (&gt;180d, presumed lost)</div></div>
 </div>
 <div style="background:#fff;border:1px solid #E4E9EF;border-radius:8px;padding:14px 18px;margin-bottom:16px;font-size:15px;color:#000;line-height:1.6">
-<strong>Re-engagement priority:</strong> Fresh (0-30d) has the highest odds of coming back &mdash; touch these first. Warm (31-90d) is where a thoughtful outreach can still turn things around. Cold (&gt;180d) is the long shot; do these when the queue is quiet.<br><br><strong>Workflow:</strong> click a student's name (or the <strong>Pipedrive</strong> button) to open their deal, then log the outreach as a Pipedrive activity right on the deal &mdash; keeps everything in one place.</div>
+<strong>Re-engagement priority:</strong> Fresh (0-30d) has the highest odds of coming back &mdash; touch these first. Warm (31-90d) is where a thoughtful outreach can still turn things around. Cold (&gt;180d) is the long shot.<br><br><strong>Workflow:</strong> click a student's name (or the <strong>Pipedrive</strong> button) to open their deal, then log the outreach as a Pipedrive activity right on the deal &mdash; keeps everything in one place.</div>
 <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;align-items:center">
 <input id="break-search" placeholder="Search by student, parent, or reason..." style="flex:1;min-width:240px;padding:9px 14px;border:1px solid #E4E9EF;border-radius:6px;font-size:15px" />
 <select id="break-tier" style="padding:9px 12px;border:1px solid #E4E9EF;border-radius:6px;font-size:15px;color:#000;background:#fff">
